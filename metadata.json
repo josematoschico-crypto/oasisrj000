@@ -1,0 +1,5 @@
+{
+  "name": "Oasis Rio",
+  "description": "A curated guide to the hidden gems, tranquil spots, and cultural oases of Rio de Janeiro.",
+  "requestFramePermissions": ["geolocation"]
+}

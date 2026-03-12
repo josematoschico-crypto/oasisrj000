@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "profiles": {
+      "title": "User Profiles",
+      "description": "Stores user account information linked to WhatsApp number",
+      "type": "object",
+      "properties": {
+        "phoneNumber": {
+          "type": "string",
+          "description": "The user's WhatsApp number (primary identifier)"
+        },
+        "pin": {
+          "type": "string",
+          "description": "The 4-digit lifetime access PIN"
+        },
+        "name": {
+          "type": "string",
+          "description": "User's full name"
+        },
+        "balance": {
+          "type": "number",
+          "description": "User's account balance"
+        },
+        "avatar_url": {
+          "type": "string",
+          "description": "URL to the user's profile picture"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of account creation"
+        },
+        "deviceId": {
+          "type": "string",
+          "description": "ID of the device used for registration"
+        }
+      },
+      "required": ["phoneNumber", "pin"]
+    }
+  },
+  "firestore": {
+    "/profiles/{profileId}": {
+      "schema": "profiles",
+      "description": "Individual user profile documents"
+    }
+  }
+}

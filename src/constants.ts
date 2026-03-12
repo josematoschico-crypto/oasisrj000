@@ -1,0 +1,40 @@
+import { ArtAsset, InsuranceStatus } from './types';
+
+export const MOCK_ASSETS: ArtAsset[] = [
+  {
+    id: '1',
+    title: 'Metaesquema',
+    artist: 'Hélio Oiticica',
+    year: '1958',
+    totalValue: 150000,
+    fractionPrice: 15,
+    totalFractions: 10000,
+    availableFractions: 8500,
+    imageUrl: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1000&auto=format&fit=crop',
+    gallery: [],
+    insuranceStatus: InsuranceStatus.SECURED,
+    insuranceCompany: 'Oasis Safe',
+    policyNumber: 'ALZ-9921-X',
+    insuranceExpiry: '2026-12-31',
+    technicalReportUrl: '#',
+    description: 'Obra icônica do movimento neoconcreto brasileiro.',
+  },
+  {
+    id: '2',
+    title: 'Bicho',
+    artist: 'Lygia Clark',
+    year: '1960',
+    totalValue: 250000,
+    fractionPrice: 25,
+    totalFractions: 10000,
+    availableFractions: 4200,
+    imageUrl: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1000&auto=format&fit=crop',
+    gallery: [],
+    insuranceStatus: InsuranceStatus.SECURED,
+    insuranceCompany: 'Oasis Safe',
+    policyNumber: 'ALZ-9922-Y',
+    insuranceExpiry: '2026-12-31',
+    technicalReportUrl: '#',
+    description: 'Escultura interativa que convida o espectador à manipulação.',
+  }
+];
